@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:columnCount="5"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp"
+    android:rowCount="2"
+    tools:context=".AppsListFragment"
+    >
+
+    <ImageView
+        android:id="@+id/listAppImageView"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_row="0"
+        android:layout_rowSpan="1"
+        android:contentDescription="@string/application_icon"
+        android:scaleType="fitCenter"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        tools:src="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/listAppName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:singleLine="true"
+        android:textSize="22sp"
+        tools:text="Application XYZ" />
+
+    <TextView
+        android:id="@+id/listAppType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="4"
+        android:layout_row="0"
+        android:singleLine="true"
+        android:textSize="14sp"
+        tools:text="x86" />
+
+    <TextView
+        android:id="@+id/listAppPackageName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        tools:text="com.example.test.thisapplication" />
+
+    <TextView
+        android:id="@+id/listAppLastUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="4"
+        android:layout_row="1"
+        android:singleLine="true"
+        android:textSize="14sp"
+        tools:text="2014-12-04" />
+
+</GridLayout>

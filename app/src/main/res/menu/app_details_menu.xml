@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_app_details_share"
+        android:icon="@drawable/ic_menu_share"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_share_app_details" />
+    <!--android:actionProviderClass="android.widget.ShareActionProvider"-->
+
+    <item
+        android:id="@+id/menu_app_details_refresh"
+        android:icon="@drawable/ic_menu_refresh"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_refresh_app" />
+</menu>

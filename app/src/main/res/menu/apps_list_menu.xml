@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/search_filter"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="1"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:title="@string/search_filter_title" />
+    <item
+        android:id="@+id/menu_apps_list_sort_alphabetically"
+        android:checkable="true"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="@string/sort_alphabetically" />
+    <item
+        android:id="@+id/menu_apps_list_sort_by_last_update"
+        android:checkable="true"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="@string/sort_by_last_update" />
+    <item
+        android:id="@+id/menu_apps_list_sort_by_type"
+        android:checkable="true"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="@string/sort_by_type" />
+    <item
+        android:id="@+id/menu_apps_list_include_java_apps_menu_item_entry"
+        android:checkable="true"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="@string/include_java_apps_menu_item_entry" />
+    <item
+        android:id="@+id/menu_apps_list_export_as_csv"
+        android:orderInCategory="6"
+        android:showAsAction="never"
+        android:title="@string/csv_export_menu_item_entry" />
+    <item
+        android:id="@+id/menu_apps_list_refresh"
+        android:icon="@drawable/ic_menu_refresh"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/refresh_all_menu_entry" />
+</menu>

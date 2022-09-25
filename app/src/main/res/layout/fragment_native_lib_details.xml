@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="24dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".NativeLibDetailsFragment"
+    >
+
+    <TextView
+        android:id="@+id/entryPointsSizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Size: 58.4 kiB"/>
+
+    <TextView
+        android:id="@+id/entryPointsABITextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="ABI: armeabi-v7a" />
+
+    <TextView
+        android:id="@+id/dependenciesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Dependencies: libc.so, libdl.so, libm.so"/>
+
+    <TextView
+        android:id="@+id/frameworksTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Frameworks: OpenCV, OpenSSL"/>
+
+    <TextView
+        android:id="@+id/entryPointsTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_title_native_library_entry_points"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/entryPointsListView"
+        android:layout_width="wrap_content"
+        android:minHeight="48dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadeScrollbars="false"
+        android:listSelector="@android:color/transparent"
+        android:requiresFadingEdge="vertical"
+        tools:listitem="@layout/list_item_entrypoints"
+        android:focusable="true">
+            <requestFocus />
+        </ListView>
+
+</LinearLayout>

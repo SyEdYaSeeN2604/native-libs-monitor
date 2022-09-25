@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="exported_database_read_permission_description">Permission to read the list of applications exported by Native Libs Monitor, along with their type and status.</string>
+    <string name="exported_database_read_permission_label">Permission to read the list of applications installed.</string>
+</resources>

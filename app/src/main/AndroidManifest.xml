@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xh.nativelibsmonitor.app">
+
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <uses-sdk tools:overrideLibrary="com.android.support, android.support.v17.leanback" />
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <application
+        android:name=".NativeLibsMonitorApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:isGame="false"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppDetailActivity"
+            android:allowTaskReparenting="true"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TvAppsListActivity"
+            android:banner="@drawable/ic_tv_launcher"
+            android:label="@string/app_name"
+            android:theme="@style/TvAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TvAppDetailActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/TvAppTheme" />
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="b31271c5ec3664618545ea25d1cbf0787fa93a89" />
+
+    </application>
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="list_entry_title_application">Application</string>
+    <string name="list_entry_title_link">Link</string>
+    <string name="list_entry_title_type">Type</string>
+    <string name="list_entry_title_version_code">Version Code</string>
+    <string name="list_entry_title_version_name">Version Name</string>
+    <string name="list_entry_title_apk_location">Apk Location</string>
+    <string name="list_entry_title_apk_locations">Apk Locations</string>
+    <string name="list_entry_title_installed_libraries">Installed libraries</string>
+    <string name="list_entry_title_packaged_libraries">Libraries inside APK</string>
+    <string name="unknown">unknown</string>
+    <string name="application_type_no_libs">no libs</string>
+    <string name="application_type_x86_libs">x86 libs</string>
+    <string name="application_type_x86_64_libs">x86_64 libs</string>
+    <string name="application_type_arm_libs">arm libs</string>
+    <string name="application_type_arm64_libs">arm64 libs</string>
+    <string name="application_type_mips_libs">mips libs</string>
+    <string name="application_type_mips_64_libs">mips64 libs</string>
+    <string name="application_type_mixed_abis_libs">mixed ABIs</string>
+</resources>

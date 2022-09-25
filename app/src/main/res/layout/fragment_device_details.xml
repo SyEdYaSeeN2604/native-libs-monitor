@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/device_details_root_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:minWidth="@dimen/dialog_min_width"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/build_version_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/build_version_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="LRX21V.XXXXXXXXX.XXXXXXX.XXXXXX"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/cpu_abis_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cpu_abis_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="x86_64,x86,armeabi-v7a,armeabi"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/native_bridge_version_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/native_bridge_version_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/native_bridge_version_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="5.0.2y.5033.33"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/opengles_version_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/opengles_version_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="3.1"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/opengles_driver_vendor_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/opengles_driver_vendor_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="Intel"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/opengles_hardware_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/opengles_hardware_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="HD Graphics"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/opengles_driver_version_label"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/opengles_driver_version_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        tools:text="Build XYZ"
+        android:textSize="18sp" />
+</LinearLayout>

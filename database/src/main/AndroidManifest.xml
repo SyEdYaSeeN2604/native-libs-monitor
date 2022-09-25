@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xh.nativelibsanalyzer.database">
+
+    <permission
+        android:name="com.xh.nativelibsmonitor.database.permission.READ_EXPORTED_DB"
+        android:description="@string/exported_database_read_permission_description"
+        android:label="@string/exported_database_read_permission_label" />
+    <permission
+        android:name="com.xh.nativelibsmonitor.database.permission.ACCESS_DB"
+        android:protectionLevel="signature" />
+
+    <application>
+        <provider
+            android:name="com.xh.nativelibsmonitor.database.AppProvider"
+            android:authorities="com.xh.nativelibsmonitor.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:grantUriPermissions="false"
+            android:permission="com.xh.nativelibsmonitor.database.permission.ACCESS_DB">
+            <path-permission
+                android:path="/apps_list.csv"
+                android:readPermission="com.xh.nativelibsmonitor.database.permission.READ_EXPORTED_DB" />
+            <grant-uri-permission android:path="/apps_list.csv" />
+        </provider>
+    </application>
+
+</manifest>

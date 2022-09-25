@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base applicationEntry theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="TvAppTheme" parent="Theme.Leanback" />
+
+    <!--<style name="ActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar.Solid.Inverse">-->
+    <!--<item name="android:indeterminateProgressStyle">@style/IndeterminateProgress</item>-->
+    <!--<item name="indeterminateProgressStyle">@style/IndeterminateProgress</item>-->
+    <!--</style>-->
+
+    <!--<style name="IndeterminateProgress" parent="@android:style/Widget.ProgressBar.Small">-->
+    <!--<item name="android:indeterminateDrawable">@drawable/progress_indeterminate_custom</item>-->
+    <!--</style>-->
+
+</resources>
