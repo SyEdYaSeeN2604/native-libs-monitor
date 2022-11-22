@@ -5,14 +5,14 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    compileSdkVersion = 30
-    buildToolsVersion = "30.0.3"
+    compileSdkVersion = 31
+    buildToolsVersion = "31.0.0"
 
     defaultConfig {
         applicationId "com.xh.nativelibsmonitor.app"
         minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 2000
+        targetSdkVersion 31
+        versionCode 9002000
         versionName "2.0.0"
     }
 

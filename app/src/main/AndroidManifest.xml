@@ -28,6 +28,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:exported="true"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +48,7 @@
             android:name=".TvAppsListActivity"
             android:banner="@drawable/ic_tv_launcher"
             android:label="@string/app_name"
+            android:exported="true"
             android:theme="@style/TvAppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
