@@ -12,8 +12,8 @@ android {
         applicationId "com.xh.nativelibsmonitor.app"
         minSdkVersion 16
         targetSdkVersion 31
-        versionCode 9002000
-        versionName "2.0.0"
+        versionCode 9002001
+        versionName "2.0.1"
     }
 
 
